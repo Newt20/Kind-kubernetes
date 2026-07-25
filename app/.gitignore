@@ -1,0 +1,83 @@
+# ============================================================================
+# .gitignore for BMI Health Tracker Project
+# ============================================================================
+
+# Terraform Files
+# ============================================================================
+# Terraform state files - contain sensitive info
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Terraform plan files
+*.tfplan
+tfplan
+
+# Terraform backend config - contains sensitive bucket/profile info
+backend-config.tfbackend
+
+# Terraform variable files with actual values
+terraform.tfvars
+
+# Terraform lock files (optional - some teams commit this)
+# .terraform.lock.hcl
+
+# Terraform directories
+.terraform/
+.terraform.lock.hcl
+
+# Node.js Dependencies
+# ============================================================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Environment Variables
+# ============================================================================
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Build Outputs
+# ============================================================================
+dist/
+build/
+*.log
+
+# IDE and Editor Files
+# ============================================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS Files
+# ============================================================================
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Sensitive Files
+# ============================================================================
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+credentials.json
+secrets/
+
+# Temporary Files
+# ============================================================================
+tmp/
+temp/
+*.tmp
+*.bak
+*.cache
